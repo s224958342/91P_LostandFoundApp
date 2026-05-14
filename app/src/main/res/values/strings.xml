@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">sit708_7_1p</string>
+    <string name="app_name">sit708_9_1p</string>
+    <string name="title_activity_maps">MapsActivity</string>
 </resources>

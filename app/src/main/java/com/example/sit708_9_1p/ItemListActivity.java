@@ -1,4 +1,4 @@
-package com.example.sit708_7_1p;
+package com.example.sit708_9_1p;
 
 import android.database.Cursor;
 import android.os.Bundle;
@@ -50,7 +50,7 @@ public class ItemListActivity extends AppCompatActivity {
                 String item = cursor.getString(2);
                 String type = cursor.getString(1);
 
-                long postedTime = cursor.getLong(9);
+                long postedTime = cursor.getLong(11);
                 String timeAgo = getTimeAgo(postedTime);
 
                 list.add(type + " - " + item + "\nPosted " + timeAgo);
@@ -92,7 +92,7 @@ public class ItemListActivity extends AppCompatActivity {
                         String item = cursor.getString(2);
                         String type = cursor.getString(1);
 
-                        long postedTime = cursor.getLong(9);
+                        long postedTime = cursor.getLong(11);
                         String timeAgo = getTimeAgo(postedTime);
 
                         list.add(type + " - " + item + "\nPosted " + timeAgo);

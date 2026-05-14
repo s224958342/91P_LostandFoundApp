@@ -1,4 +1,4 @@
-package com.example.sit708_7_1p;
+package com.example.sit708_9_1p;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -28,6 +28,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 "description TEXT, " +
                 "date TEXT, " +
                 "location TEXT, " +
+                "latitude REAL, " +
+                "longitude REAL, " +
                 "category TEXT, " +
                 "imageUri TEXT, " +
                 "postedTime INTEGER)";
@@ -41,7 +43,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
 
     public boolean insertAdvert(String type, String item, String phone, String description,
-                                String date, String location, String category, String imageUri, long postedTime) {
+                                String date, String location, double latitude, double longitude,
+                                String category, String imageUri, long postedTime) {
         SQLiteDatabase db = this.getWritableDatabase();
 
         ContentValues values = new ContentValues();
@@ -51,6 +54,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put("description", description);
         values.put("date", date);
         values.put("location", location);
+        values.put("latitude", latitude);
+        values.put("longitude", longitude);
         values.put("category", category);
         values.put("imageUri", imageUri);
         values.put("postedTime", postedTime);

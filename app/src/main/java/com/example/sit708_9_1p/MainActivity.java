@@ -1,4 +1,4 @@
-package com.example.sit708_7_1p;
+package com.example.sit708_9_1p;
 
 import android.os.Bundle;
 
@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button createButton = findViewById(R.id.addButton);
         Button listButton = findViewById(R.id.listButton);
+        Button mapButton = findViewById(R.id.mapButton);
 
         createButton.setOnClickListener(v -> {
             startActivity(new Intent(MainActivity.this, CreateAdvertActivity.class));
@@ -34,6 +35,10 @@ public class MainActivity extends AppCompatActivity {
 
         listButton.setOnClickListener(v -> {
             startActivity(new Intent(MainActivity.this, ItemListActivity.class));
+        });
+
+        mapButton.setOnClickListener(v -> {
+            startActivity(new Intent(MainActivity.this, MapsActivity.class));
         });
     }
 

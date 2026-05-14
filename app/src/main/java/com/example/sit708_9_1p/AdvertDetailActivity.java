@@ -1,4 +1,4 @@
-package com.example.sit708_7_1p;
+package com.example.sit708_9_1p;
 
 import android.os.Bundle;
 import android.widget.Button;
@@ -39,7 +39,7 @@ public class AdvertDetailActivity extends AppCompatActivity {
             String description = cursor.getString(4);
             String date = cursor.getString(5);
             String location = cursor.getString(6);
-            String imageUri = cursor.getString(8);
+            String imageUri = cursor.getString(10);
 
             if (imageUri != null && !imageUri.isEmpty()) {
                 try {

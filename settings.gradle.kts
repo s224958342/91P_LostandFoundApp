@@ -22,6 +22,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "sit708_7_1p"
+rootProject.name = "sit708_9_1p"
 include(":app")
  

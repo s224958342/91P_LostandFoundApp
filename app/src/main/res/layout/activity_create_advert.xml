@@ -113,6 +113,15 @@
             android:hint="Location"
             android:layout_marginBottom="10dp"/>
 
+        <Button
+            android:id="@+id/currentLocationButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GET CURRENT LOCATION"
+            android:backgroundTint="#2563EB"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="10dp"/>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
