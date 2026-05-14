@@ -9,8 +9,8 @@ The app allows users to create lost or found adverts, upload an item image, sele
 
 ## Student Details
 
-- Name: Your Name
-- Student ID: Your Student ID
+- Name: Jessica Yeung
+- Student ID: 224958342
 - Unit: SIT708
 - Task: Pass Task 9.1P - Lost and Found Map Mobile App
 
